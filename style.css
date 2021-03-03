@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.body {
+  display: block;
+}
+.heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 70px 40px 70px 40px;
+}
+.heading__left {
+  width: 35%;
+  margin: 0 auto 30px auto;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+h1 {
+  font-size: inherit;
+}
+.heading__right {
+  width: 45%;
+}
+.heading__right__title {
+  margin: 0 auto 10px auto;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.heading__right__text {
+  width: 70%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 30px auto;
+}
+.container__item {
+  width: 30%;
+  padding: 0.5em;
+  position: relative;
+}
+.container__item > img {
+  width: 80%;
+  height: auto;
+}
+.container__item > p {
+  position: absolute;
+  writing-mode: vertical-rl;
+  height: auto;
+  top: 2%;
+  left: 80%;
+  font-family: 'PT Serif', serif;
+  font-size: 70%;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: normal;
+}
+.container__item > div {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 600;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+}
+.container__item__lower {
+  margin-top: 80px;
+}
+footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #a9a9a9;
+  margin-top: 90px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+a {
+  color: #a9a9a9;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 376px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+  }
+  .heading__left {
+    width: auto;
+  }
+  .heading__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}
